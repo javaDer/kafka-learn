@@ -27,7 +27,7 @@ public class KafkaSender {
         message.setMsg(UUID.randomUUID().toString());
         message.setSendTime(new Date());
         log.info("发送方  message = {}", gson.toJson(message));
-        kafkaTemplate.send("zhisheng", gson.toJson(message));
+        kafkaTemplate.send("wwjswly", gson.toJson(message));
     }
 
 }
